@@ -8,18 +8,21 @@
 <title>Murali Manohar</title>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </head>
 <style>
 
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 * { margin: 0; padding: 0; }
-body { background-color: #2a2b22; color: white; float: left;}
-table td {
-    width: 50%;
-    display: inline-block;
-}
-pre { font-family: 'Source Code Pro', monospace; width: 45ch; margin: 4em auto; padding: .5em; line-height: 0; counter-reset: line; }
+body { background-color: #2a2b22; color: white;}
+pre { font-family: 'Source Code Pro', monospace; margin: 4em auto; padding: .5em; line-height: 0; counter-reset: line; }
 pre span { display: block; line-height: 1.15rem; }
+span {color: antiquewhite;}
+#text {color: antiquewhite;}
 pre span:before { counter-increment: line; content: counter(line); display: inline-block; border-right: 1px solid #888; width: 3ch; padding: 0 .5em; margin-right: .5em; color: #888; text-align: right; }
 pre a { color: #0bc;}
 #no_1 { animation: what 5s infinite cubic-bezier(1,0,1,0); }
@@ -37,23 +40,21 @@ pre a { color: #0bc;}
 @keyframes thetwo { 0% { background-color: #2a2b22; } 11% { background-color: #2a2b22; } 22% { background-color: #2a2b22; } 33% { background-color: #2a2b22; } 44% { background-color: #2a2b22; } 55% { background-color: #eee; } 66% { background-color: #2a2b22; } 77% { background-color: #2a2b22; } }
 @keyframes optimal { 0% { background-color: #2a2b22; } 11% { background-color: #2a2b22; } 22% { background-color: #2a2b22; } 33% { background-color: #2a2b22; } 44% { background-color: #2a2b22; } 55% { background-color: #2a2b22; } 66% { background-color: #eee; } 77% { background-color: #2a2b22; } }
 @keyframes oneone { 0% { background-color: #2a2b22; } 11% { background-color: #2a2b22; } 22% { background-color: #2a2b22; } 33% { background-color: #2a2b22; } 44% { background-color: #2a2b22; } 55% { background-color: #2a2b22; } 66% { background-color: #2a2b22; } 77% { background-color: #eee; } 88% { background-color: #2a2b22; } }
-@keyframes convolution { 0% { background-color: #2a2b22; } 11% { background-color: #2a2b22; } 22% { background-color: #2a2b22; } 33% { background-color: #2a2b22; } 44% { background-color: #2a2b22; } 55% { background-color: #2a2b22; } 66% { background-color: #2a2b22; } 77% { background-color: #2a2b22; } 88% { background-color: #eee; } }
-}</style>
+@keyframes convolution { 0% { background-color: #2a2b22; } 11% { background-color: #2a2b22; } 22% { background-color: #2a2b22; } 33% { background-color: #2a2b22; } 44% { background-color: #2a2b22; } 55% { background-color: #2a2b22; } 66% { background-color: #2a2b22; } 77% { background-color: #2a2b22; } 88% { background-color: #eee; } }</style>
 
 <body>
 <pre>
-<table><tr>
-<td>
+<div class='container-fluid'>
+<div class="row">
+<div class="col-sm-6">
 <span><div style="display:inline; color:#0f0">murali@slow-down</div><div style="display:inline; color:white">:</div><div style="display:inline; color:#ff0096;">~</div><div style="display: inline; color:#0bc">$</div> cat murali.txt</span>
 <span></span>
 <span>********</span>
 <span><div style="display:inline; color:#0f0">About Me</div></span>
 <span>********</span>
 <span></span>
-<span>Hi, I'm <div style="display:inline; color:#fbec58">Murali Manohar</div>, <div style="display:inline; color:#ff0096">research intern</div> at <a href='https://www.iiit.ac.in/'>IIIT-H</a> (IIIT-Hyderabad). </span>
-<!-- <span>at <a href='https://www.iiit.ac.in/'>IIIT-H</a> (IIIT-Hyderabad). </span> -->
-<span></span>
-<span>I'm currently advised by <a href='https://www.iiit.ac.in/people/faculty/m.shrivastava/'>Manish Shrivastava</a> and <a href='https://www.bml.edu.in/faculty/dr-sudip-sanyal/'>Sudip Sanyal</a>.</span>
+<span>Hi, I'm <div style="display:inline; color:#fbec58">Murali Manohar</div>, <div style="display:inline; color:#ff0096">Associate Data Scientist</div> <div style="display:inline; color:antiquewhite"> at <a href='https://www.iiit.ac.in/'>AI Labs, Gramener.</a></div></span> <span>Former <div style="display:inline; color:#ff0096">research intern</div> <div style="display:inline; color:antiquewhite"> at <a href='https://www.iiit.ac.in/'>IIIT-H</a> (IIIT-Hyderabad).</div> </span>
+<span>Advised by <a href='https://www.iiit.ac.in/people/faculty/m.shrivastava/'>Dr. Manish Shrivastava</a> and <a href='https://www.niituniversity.in/faculty/sudip-sanyal'>Prof. Sudip Sanyal</a>.</span>
 <span></span>
 <span>At present, I'm interested in building,</span>
 <span>understanding and manipulating distributed</span>
@@ -81,7 +82,7 @@ pre a { color: #0bc;}
 <span>    modeling the distribution of general purpose sentence            </span>
 <span>    encoders has been accepted at <div style="display:inline; color:#ff0096">NIPS 2018!</div></span> -->
 <span>[<div style="display:inline; color:#0f0">1</div>] My work on Shallow Parser in a Low resource setting  </span>
-<span>    is accepted at <div style="display:inline; color:#ff0096">CICLing 2019.</div> </span>
+<span>    is accepted at <a href="https://www.cicling.org/2019/" style="display:inline; color:#ff0096">CICLing 2019.</a> </span>
 <span>[<div style="display:inline; color:#0f0">2</div>] I worked on Transfer-Learning in NLP using Language Models                    </span>
 <span>    during my internship at <div style="display:inline; color:#fbec58">LTRC Lab, IIIT Hyderabad</div> this summer. </span>
 <span>[<div style="display:inline; color:#0f0">3</div>] Our work on Question-Relevance in Visual QA helped us to prove</span>
@@ -95,10 +96,11 @@ pre a { color: #0bc;}
 <span>*******</span>
 <span></span>
 <span>kmanoharmurali@gmail.com</span>
-<span><a href="https://github.com/gitlost-murali">GitHub</a> <a href="">Google Scholar</a> <a href="CV.pdf" download>Curriculum Vitae</a></span>
+<span><a href="https://github.com/gitlost-murali">GitHub</a> <a href="">Google Scholar</a> <a href="Resume.pdf" download>Curriculum Vitae</a></span>
 <span><div style="display:inline; font-size:12px;">--more--</div></span>
-</td>
-<td><span>************</span>
+</div>
+<div class="col-sm-6">
+<span>************</span>
 <span><div style="display:inline; color:#0f0">Projects</div></span>
 <span>************</span>
 <span></span>
@@ -150,7 +152,8 @@ pre a { color: #0bc;}
 <span> [<div style="display:inline; color:#0f0">I</div>] GYM / SWIM / CODE </span>
 <span></span>
 <span> <div style="display:inline; font-size:12px;">Credits to SanDeep for the design idea and @boredyannlecun for the quote.</div></span>
-</td></tr>
-</table>
+</div>
+</div>
+</div>
 </pre>
 </body></html>
