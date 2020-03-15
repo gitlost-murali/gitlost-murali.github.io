@@ -9,10 +9,10 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <style>
 
@@ -161,15 +161,23 @@ pre a { color: #0bc;}
 </div>
 </pre>
 <script>
-var n = localStorage.getItem('on_load_counter');
+  $(document).ready(function(){  });
 
-if (n === null) {
-  n = 0;
-}
-n++;
 
-localStorage.setItem("on_load_counter", n);
+$.ajax
+  ({
+      type: "GET",
+      dataType : 'json',
+      async: false,
+      url: 'updatecount.php'
+  });
+
+$.getJSON('views.json', function(data) {
+      console.log(data['views']);
+      var n = data['views'];
+      $("#CounterVisitor").html(' Visitor Count : <b>' + n.toString()+'</b>')
+  });
 // Reference https://stackoverflow.com/questions/47428504/javascript-count-number-of-visitor-for-website
-$("#CounterVisitor").html(' Visitor Count : <b>' + n.toString()+'</b>')
+// $("#CounterVisitor").html(' Visitor Count : <b>' + n.toString()+'</b>')
 </script>
 </body></html>
