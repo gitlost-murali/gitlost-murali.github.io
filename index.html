@@ -162,8 +162,6 @@ pre a { color: #0bc;}
 </pre>
 <script>
   $(document).ready(function(){  });
-
-
 $.ajax
   ({
       type: "GET",
@@ -175,7 +173,7 @@ $.ajax
 $.getJSON('views.json', function(data) {
       console.log(data['views']);
       var n = data['views'];
-      $("#CounterVisitor").html(' Visitor Count : <b>' + n.toString()+'</b>')
+      // $("#CounterVisitor").html(' Visitor Count : <b>' + n.toString()+'</b>') //Avoiding this since github doesn't support dynamic PHP.
   });
 // Reference https://stackoverflow.com/questions/47428504/javascript-count-number-of-visitor-for-website
 // $("#CounterVisitor").html(' Visitor Count : <b>' + n.toString()+'</b>')
