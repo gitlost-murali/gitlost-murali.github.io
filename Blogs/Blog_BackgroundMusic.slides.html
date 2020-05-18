@@ -13310,7 +13310,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="What-is-given-to-the-AI-system?">What is given to the AI system?<a class="anchor-link" href="#What-is-given-to-the-AI-system?">&#182;</a></h4><p>Video below (Video Frames with no audio) is what we generally give as an input to the AI system to identify the current scene's atmosphere. Model should look at each frame, identify characters and their expressions. Let's try to the process this input, just as how AI system will do. Can you guess the atmosphere/mood of this scene from facial expressions?</p>
+<h4 id="What-is-given-to-the-AI-system?">What is given to the AI system?<a class="anchor-link" href="#What-is-given-to-the-AI-system?">&#182;</a></h4><p>Video below (Video Frames with no audio) is what we generally give as an input to the AI system to identify the current scene's atmosphere. Model should look at each frame, identify characters and their expressions. Let's try to process this input, just as how AI system will do. Can you guess the atmosphere/mood of this scene from facial expressions?</p>
 
 </div>
 </div>
@@ -13414,7 +13414,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's take a scenario where  <strong>a person hits a bunch of people</strong>. Here, AI will fail to notice is whether its heroic or villaneous because it <strong>doesn't have any context or world knowledge that we possess</strong>. So, just giving a video feed without audio doesn't help.</p>
+<p>Let's take a scenario where  <strong>a person hits a bunch of people</strong>. Here, AI will fail to notice whether it's heroic or villainous because it <strong>doesn't have any context or world knowledge that we possess</strong>. So, just giving a video feed without audio doesn't help.</p>
 
 </div>
 </div>
@@ -13456,7 +13456,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Step-4:-Input-to-the-AI-model-for-predicting-the-mood">Step 4: Input to the AI model for predicting the mood<a class="anchor-link" href="#Step-4:-Input-to-the-AI-model-for-predicting-the-mood">&#182;</a></h3><p>We convert these music files into a format suitable for the AI system. It can be a waveform, spectogram etc.</p>
+<h3 id="Step-4:-Input-to-the-AI-model-for-predicting-the-mood">Step 4: Input to the AI model for predicting the mood<a class="anchor-link" href="#Step-4:-Input-to-the-AI-model-for-predicting-the-mood">&#182;</a></h3><p>We convert these music files into a format suitable for the AI system. It can be a waveform, spectrogram etc.</p>
 <p><img src="bgm4.png" alt=""></p>
 
 </div>
@@ -13465,8 +13465,9 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We built an AI model which processes a video purely based on its audio. Here's what we are able to get.... We used an open-source Labelling repository, <a href="https://github.com/heartexlabs/label-studio">Label-Studio</a>, to display our predictions. You can check out the demo <a href="http://52.179.192.58:9080/tasks">here</a></p>
-<p><img src="bgm5.png" alt=""></p>
+<h3 id="Results">Results<a class="anchor-link" href="#Results">&#182;</a></h3><p>We built an AI model which processes a video purely based on its audio. Here's what we are able to get.  We used an open-source Labelling repository, <a href="https://github.com/heartexlabs/label-studio">Label-Studio</a>, to display our predictions. You can check out the demo <a href="http://52.179.192.58:9080/tasks">here</a></p>
+<p><img src="bgm5.png" alt="">
+<strong>Figure</strong>: Predictions made on an audio file. Different colors refer to different moods. For brevity, we started with moods like happy, emotional/sentimental, Intense-Tension/Fight.</p>
 <p>While we are not vouching for <code>Audio-only</code> based systems, we want to emphasize that <code>Audio</code> is an important thing to consider while performing video analysis.</p>
 
 </div>
@@ -13475,7 +13476,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Future-Work">Future Work<a class="anchor-link" href="#Future-Work">&#182;</a></h3><p>My colleagues worked on CameraTrap, where we process the motion sensor based cameras to check if there are animals in the frame. As a new proposal, we are working on including audio to find interesting insights because there might be situations where we can detect poachers by vehicle sounds/ shooting sounds and also we can know if the animal is screaming in pain. Vocals are also quite informative as language/text conveys more information. We will direct our future efforts towards towards exploiting Vocals.</p>
+<h3 id="Future-Work">Future Work<a class="anchor-link" href="#Future-Work">&#182;</a></h3><p>My colleagues worked on CameraTrap, where we process the motion sensor based cameras to check if there are animals in the frame. As a new proposal, we are working on including audio to find interesting insights because there might be situations where we can detect poachers by vehicle sounds/ shooting sounds and also we can know if the animal is screaming in pain. Vocals are also quite informative as language/text conveys more information. We will direct our future efforts towards exploiting Vocals and also towards more nuanced moods in BGMs.</p>
 
 </div>
 </div>
