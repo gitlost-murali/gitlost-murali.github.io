@@ -13258,7 +13258,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Introduction:">Introduction:<a class="anchor-link" href="#Introduction:">&#182;</a></h3><p>Remember how many Indian films got away with the <strong>creepy stares or actions of heroes</strong>? BGM plays a huge part in <strong>spoonfeeding audience that it's actually romantic</strong>. I will base my article on the premise that the <strong>essential part</strong> of processing a video is <strong>its Audio</strong>, despite the popular belief of processing video frames to identify expressions. I will also show you how we converted these theory into <strong>a working pilot</strong> on a Indian TV soap opera.</p>
+<h3 id="Introduction:">Introduction:<a class="anchor-link" href="#Introduction:">&#182;</a></h3><p>Remember how many Indian films got away with the <strong>creepy stares or actions of heroes</strong>? Background Music(BGM) plays a huge part in <strong>spoonfeeding audience that it's actually romantic</strong>. I will base my article on the premise that the <strong>essential part</strong> of processing a video is <strong>its Audio</strong>, despite the popular belief of processing video frames to identify expressions. I will also show you how we converted this theory into <strong>a working pilot</strong> on a Indian TV soap opera.</p>
 <h4 id="Video-:-Take-a-look-at-this-video-for-understanding-how-a-scene's-mood-changes-through-BGM">Video : Take a look at this video for understanding how a scene's mood changes through BGM<a class="anchor-link" href="#Video-:-Take-a-look-at-this-video-for-understanding-how-a-scene's-mood-changes-through-BGM">&#182;</a></h4>
 </div>
 </div>
@@ -13269,9 +13269,11 @@ a.anchor-link {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    &lt;div style=&quot;text-align: center&quot;&gt;</span>
 <span class="s2">    &lt;video alt=&quot;test&quot; controls width=500&gt;</span>
 <span class="s2">        &lt;source src=&quot;bgmmatters.mp4&quot; type=&quot;video/mp4&quot;&gt;</span>
 <span class="s2">    &lt;/video&gt;</span>
+<span class="s2">    &lt;/div&gt;</span>
 <span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -13291,9 +13293,11 @@ a.anchor-link {
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
+    <div style="text-align: center">
     <video alt="test" controls width=500>
         <source src="bgmmatters.mp4" type="video/mp4">
     </video>
+    </div>
 
 </div>
 
@@ -13317,9 +13321,11 @@ a.anchor-link {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    &lt;div style=&quot;text-align: center&quot;&gt;</span>
 <span class="s2">    &lt;video alt=&quot;test&quot; controls width=500&gt;</span>
 <span class="s2">        &lt;source src=&quot;yrkkh_1_cut_noaudio.mp4&quot; type=&quot;video/mp4&quot;&gt;</span>
 <span class="s2">    &lt;/video&gt;</span>
+<span class="s2">    &lt;/div&gt;</span>
 <span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -13339,9 +13345,11 @@ a.anchor-link {
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
+    <div style="text-align: center">
     <video alt="test" controls width=500>
         <source src="yrkkh_1_cut_noaudio.mp4" type="video/mp4">
     </video>
+    </div>
 
 </div>
 
@@ -13365,9 +13373,11 @@ a.anchor-link {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">    &lt;div style=&quot;text-align: center&quot;&gt;</span>
 <span class="s2">    &lt;video alt=&quot;test&quot; controls width=500&gt;</span>
 <span class="s2">        &lt;source src=&quot;yrkkh_1_cut.mp4&quot; type=&quot;video/mp4&quot;&gt;</span>
 <span class="s2">    &lt;/video&gt;</span>
+<span class="s2">    &lt;/div&gt;</span>
 <span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -13387,9 +13397,11 @@ a.anchor-link {
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
+    <div style="text-align: center">
     <video alt="test" controls width=500>
         <source src="yrkkh_1_cut.mp4" type="video/mp4">
     </video>
+    </div>
 
 </div>
 
@@ -13410,8 +13422,9 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>When we are talking in terms of Indian TV serials (soap operas), every scene is filled with histrionics and loud BGMs to convey the situation of the scene. We leveraged this information to analyze the videos.</p>
-<h3 id="Step-1:--Extracting-Audio-from-Video">Step 1:  Extracting Audio from Video<a class="anchor-link" href="#Step-1:--Extracting-Audio-from-Video">&#182;</a></h3><p><img src="bgm1.png" alt=""></p>
+<p>When we are talking in terms of Indian TV serials (soap operas), every scene is filled with histrionics and loud BGMs to convey the situation of the scene. We leveraged this information to analyze the videos in the following way,</p>
+<h3 id="Step-1:--Extracting-Audio-from-Video">Step 1:  Extracting Audio from Video<a class="anchor-link" href="#Step-1:--Extracting-Audio-from-Video">&#182;</a></h3><p>The differential factor between our method and existing methods comes in Step-1 i.e <strong>Input format to the system</strong>. As discussed above, current video-analytics practice involves discarding audio and converting the video into frames/images, which are to be processed by current State-Of-The-Art Neural Networks. Since we base our approach to show the rich information possessed in the audio, we <strong>only consider the audio</strong> while discarding the video altogether.
+<img src="bgm1.png" alt=""></p>
 
 </div>
 </div>
@@ -13419,7 +13432,14 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Step-2:-BGM-extraction-/-Vocal-separation">Step 2: BGM extraction / Vocal separation<a class="anchor-link" href="#Step-2:-BGM-extraction-/-Vocal-separation">&#182;</a></h3><p><img src="bgm2.png" alt="BGM extraction / Vocal separation"></p>
+<h3 id="Step-2:-BGM-extraction-/-Vocal-separation">Step 2: BGM extraction / Vocal separation<a class="anchor-link" href="#Step-2:-BGM-extraction-/-Vocal-separation">&#182;</a></h3><p>Audio consists of vocals and background-music. Although the vocals are informative, we discarded it for the vulnerability of error propagation. Error in any of the below steps will result in a totally different outcome.</p>
+<ol>
+<li>Converting speech to text.</li>
+<li>Text translation to English.</li>
+<li>Text classification, etc.</li>
+</ol>
+<p>Accordingly, we extract different pieces of sound from the audio and store the BGM.</p>
+<p><img src="bgm2.png" alt="BGM extraction / Vocal separation"></p>
 
 </div>
 </div>
@@ -13427,7 +13447,8 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Step-3:-Splitting-BGM">Step 3: Splitting BGM<a class="anchor-link" href="#Step-3:-Splitting-BGM">&#182;</a></h3><p><img src="bgm3.png" alt=""></p>
+<h3 id="Step-3:-Splitting-BGM">Step 3: Splitting BGM<a class="anchor-link" href="#Step-3:-Splitting-BGM">&#182;</a></h3><p>We split the audio into smaller intervals on the assumption that each mood's bgm will have a fading entry and exit. After this process, we will be left with tiny music files.</p>
+<p><img src="bgm3.png" alt=""></p>
 
 </div>
 </div>
@@ -13435,7 +13456,8 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Step-4:-Input-to-the-AI-model-for-predicting-the-mood">Step 4: Input to the AI model for predicting the mood<a class="anchor-link" href="#Step-4:-Input-to-the-AI-model-for-predicting-the-mood">&#182;</a></h3><p><img src="bgm4.png" alt=""></p>
+<h3 id="Step-4:-Input-to-the-AI-model-for-predicting-the-mood">Step 4: Input to the AI model for predicting the mood<a class="anchor-link" href="#Step-4:-Input-to-the-AI-model-for-predicting-the-mood">&#182;</a></h3><p>We convert these music files into a format suitable for the AI system. It can be a waveform, spectogram etc.</p>
+<p><img src="bgm4.png" alt=""></p>
 
 </div>
 </div>
@@ -13443,7 +13465,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id=".......................To-Do:-include-some-demo-samples......................................">.......................To Do: include some demo samples......................................<a class="anchor-link" href="#.......................To-Do:-include-some-demo-samples......................................">&#182;</a></h3><p>We built an AI model which processes a video purely based on its audio. Here's what we are able to get....</p>
+<p>We built an AI model which processes a video purely based on its audio. Here's what we are able to get.... We used an open-source Labelling repository, <a href="https://github.com/heartexlabs/label-studio">Label-Studio</a>, to display our predictions. You can check out the demo <a href="http://52.179.192.58:9080/tasks">here</a></p>
 <p><img src="bgm5.png" alt=""></p>
 <p>While we are not vouching for <code>Audio-only</code> based systems, we want to emphasize that <code>Audio</code> is an important thing to consider while performing video analysis.</p>
 
@@ -13453,17 +13475,23 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Where-else-can-it-work?">Where else can it work?<a class="anchor-link" href="#Where-else-can-it-work?">&#182;</a></h4><p><em>My colleagues worked on CameraTrap, where we process the motion sensor based cameras to check if there are animals in the frame. As a new proposal, we are working on including audio to find interesting insights because there might be situations where we can detect poachers by vehicle sounds/ shooting sounds and also we can know if the animal is screaming in pain.</em></p>
+<h3 id="Future-Work">Future Work<a class="anchor-link" href="#Future-Work">&#182;</a></h3><p>My colleagues worked on CameraTrap, where we process the motion sensor based cameras to check if there are animals in the frame. As a new proposal, we are working on including audio to find interesting insights because there might be situations where we can detect poachers by vehicle sounds/ shooting sounds and also we can know if the animal is screaming in pain. Vocals are also quite informative as language/text conveys more information. We will direct our future efforts towards towards exploiting Vocals.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 
+    </div>
 </div>
 </div>
+
 </div></section></section>
 </div>
 </div>
