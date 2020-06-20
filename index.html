@@ -1,184 +1,322 @@
 
 <!DOCTYPE html>
-<!-- saved from url=(0017)http://digika.pl/ -->
-<html lang="pl"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width">
-<title>Murali Manohar</title>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-  <script src="assets/js/popper.min.js" ></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/jquery/jquery.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166877256-1"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-166877256-1');
+  </script> -->
+
+  <meta charset="utf-8">
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Data Scientist, Data Science, Murali, Manohar, Machine Learning, Data, Visualization, pptx, python, d3">
+  <meta name="description" content="Murali Manohar's personal website">
+  <meta name="author" content="Murali Manohar">
+
+  <title>Murali Manohar</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
-<style>
 
-/* @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro'); */
-* { margin: 0; padding: 0; }
-body { background-color: #2a2b22; color: white;}
-pre { font-family: 'Source Code Pro', monospace; margin: 4em auto; padding: .5em; line-height: 0; counter-reset: line; }
-pre span { display: block; line-height: 1.15rem; }
-span {color: antiquewhite;}
-#text {color: antiquewhite;}
-pre span:before { counter-increment: line; content: counter(line); display: inline-block; border-right: 1px solid #888; width: 3ch; padding: 0 .5em; margin-right: .5em; color: #888; text-align: right; }
-pre a { color: #0bc;}
-#no_1 { animation: what 5s infinite cubic-bezier(1,0,1,0); }
-#no_2 { animation: is 5s infinite cubic-bezier(1,0,1,0); }
-#no_3 { animation: theone 5s infinite cubic-bezier(1,0,1,0); }
-#no_4 { animation: singularity 5s infinite cubic-bezier(1,0,1,0); }
-#no_5 { animation: thetwo 5s infinite cubic-bezier(1,0,1,0); }
-#no_6 { animation: optimal 5s infinite cubic-bezier(1,0,1,0); }
-#no_7 { animation: oneone 5s infinite cubic-bezier(1,0,1,0); }
-#no_8 { animation: convolution 5s infinite cubic-bezier(1,0,1,0); }
-@keyframes what { 0% { background-color: #eee; } 11% { background-color: #2a2b22; } 22% { background-color: #2a2b22; } 33% { background-color: #2a2b22; } 44% { background-color: #2a2b22; } 55% { background-color: #2a2b22; } 66% { background-color: #2a2b22; } 77% { background-color: #2a2b22; } }
-@keyframes is { 0% { background-color: #2a2b22; } 11% { background-color: #eee; } 22% { background-color: #2a2b22; } 33% { background-color: #2a2b22; } 44% { background-color: #2a2b22; } 55% { background-color: #2a2b22; } 66% { background-color: #2a2b22; } 77% { background-color: #2a2b22; } }
-@keyframes theone { 0% { background-color: #2a2b22; } 11% { background-color: #2a2b22; } 22% { background-color: #eee; } 33% { background-color: #2a2b22; } 44% { background-color: #2a2b22; } 55% { background-color: #2a2b22; } 66% { background-color: #2a2b22; } 77% { background-color: #2a2b22; } }
-@keyframes singularity { 0% { background-color: #2a2b22; } 11% { background-color: #2a2b22; } 22% { background-color: #2a2b22; } 33% { background-color: #eee; } 44% { background-color: #2a2b22; } 55% { background-color: #2a2b22; } 66% { background-color: #2a2b22; } 77% { background-color: #2a2b22; } }
-@keyframes thetwo { 0% { background-color: #2a2b22; } 11% { background-color: #2a2b22; } 22% { background-color: #2a2b22; } 33% { background-color: #2a2b22; } 44% { background-color: #2a2b22; } 55% { background-color: #eee; } 66% { background-color: #2a2b22; } 77% { background-color: #2a2b22; } }
-@keyframes optimal { 0% { background-color: #2a2b22; } 11% { background-color: #2a2b22; } 22% { background-color: #2a2b22; } 33% { background-color: #2a2b22; } 44% { background-color: #2a2b22; } 55% { background-color: #2a2b22; } 66% { background-color: #eee; } 77% { background-color: #2a2b22; } }
-@keyframes oneone { 0% { background-color: #2a2b22; } 11% { background-color: #2a2b22; } 22% { background-color: #2a2b22; } 33% { background-color: #2a2b22; } 44% { background-color: #2a2b22; } 55% { background-color: #2a2b22; } 66% { background-color: #2a2b22; } 77% { background-color: #eee; } 88% { background-color: #2a2b22; } }
-@keyframes convolution { 0% { background-color: #2a2b22; } 11% { background-color: #2a2b22; } 22% { background-color: #2a2b22; } 33% { background-color: #2a2b22; } 44% { background-color: #2a2b22; } 55% { background-color: #2a2b22; } 66% { background-color: #2a2b22; } 77% { background-color: #2a2b22; } 88% { background-color: #eee; } }</style>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <span class="d-none d-lg-block">  <h5 class="m-0 text-pr2 fs-20 pl-2 pd-5" color='white'><b>Murali</b> Manohar</h5></span>
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Murali Manohar">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#mywork">Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#thoughts">Thoughts</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#notebook">Notebook</a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
 
-<body>
-<pre>
-<div class='container-fluid'>
-<div class="row">
-<div class="col-sm-6">
-<span><div style="display:inline; color:#0f0">murali@slow-down</div><div style="display:inline; color:white">:</div><div style="display:inline; color:#ff0096;">~</div><div style="display: inline; color:#0bc">$</div> cat murali.txt</span>
-<span></span>
-<span>********</span>
-<span><div style="display:inline; color:#0f0">About Me</div></span>
-<span>********</span>
-<span></span>
-<span>Hi, I'm <div style="display:inline; color:#fbec58">Murali Manohar</div>, <div style="display:inline; color:#ff0096">Associate Data Scientist</div> <div style="display:inline; color:antiquewhite"> at <a href='https://www.iiit.ac.in/'>AI Labs, Gramener.</a></div></span> <span>Former <div style="display:inline; color:#ff0096">research intern</div> <div style="display:inline; color:antiquewhite"> at <a href='https://www.iiit.ac.in/'>IIIT-H</a> (IIIT-Hyderabad).</div> </span>
-<span>Advised by <a href='https://www.iiit.ac.in/people/faculty/m.shrivastava/'>Dr. Manish Shrivastava</a> and <a href='https://www.niituniversity.in/faculty/sudip-sanyal'>Prof. Sudip Sanyal</a>.</span>
-<span></span>
-<span>At present, I'm interested in building,</span>
-<span>understanding and manipulating distributed</span>
-<span>representations of text.</span>
-<span></span>
-<span>       What        is       the   singularity?</span>
-<span>         |         |         |         |      </span>
-<span>       (<a id="no_1">   </a>)&#8213;&#8213;&#8213;&#8213;&#8213;(<a id="no_2">   </a>)&#8213;&#8213;&#8213;&#8213;&#8213;(<a id="no_3">   </a>)&#8213;&#8213;&#8213;&#8213;&#8213;(<a id="no_4">   </a>)&#8213;&#8213;&#8213;&#8213;&#8213;</span>
-<span>                                              |</span>
-<span>     ------------------------------------------</span>
-<span>     |</span>
-<span>      -(<a id="no_5">   </a>)&#8213;&#8213;&#8213;&#8213;&#8213;(<a id="no_6">   </a>)&#8213;&#8213;&#8213;&#8213;&#8213;(<a id="no_7">   </a>)&#8213;&#8213;&#8213;&#8213;&#8213;(<a id="no_8">   </a>)</span>
-<span>         |         |         |         |</span>
-<span>        The     optimal     1x1   convolution </span>
-<span></span>
-<span></span>
-<span>Previously, I was a <div style="display:inline; color:#ff0096">summer research intern</div> at <a href='https://www.iiit.ac.in/'>IIIT-Hyd</a>.</span>
-<!-- <span><a href='https://www.iiit.ac.in/'>IIIT-Hyd</a>.</span> -->
-<span></span>
-<span>****</span>
-<span><div style="display:inline; color:#0f0">News</div></span>
-<span>****</span>
-<span></span>
-<!-- <span>[<div style="display:inline; color:#0f0">1</div>] Our paper on training <div style="display:inline; color:#fbec58">generative models for text</div> by </span>
-<span>    modeling the distribution of general purpose sentence            </span>
-<span>    encoders has been accepted at <div style="display:inline; color:#ff0096">NIPS 2018!</div></span> -->
-<span>[<div style="display:inline; color:#0f0">1</div>] My work on Shallow Parser in a Low resource setting  </span>
-<span>    is accepted at <a href="https://www.cicling.org/2019/" style="display:inline; color:#ff0096">CICLing 2019.</a> </span>
-<span>[<div style="display:inline; color:#0f0">2</div>] I worked on Transfer-Learning in NLP using Language Models                    </span>
-<span>    during my internship at <div style="display:inline; color:#fbec58">LTRC Lab, IIIT Hyderabad</div> this summer. </span>
-<span>[<div style="display:inline; color:#0f0">3</div>] Our work on Question-Relevance in Visual QA helped us to prove</span>
-<span>    our hypothesis and<div style="display:inline; color:#fbec58"> gain SOTA results by 1.3% normalized acc</div>.</span>
-<span>    Presented as <div style="display:inline; color:#ff0096">Core Project.</div></span>
-  <!-- <a href="https://github.com/Maluuba/gensen">[Code]</a><a href="https://arxiv.org/abs/1804.00079">[Paper]</a> -->
+  <div class="container-fluid p-0">
 
-<span></span>
-<span>*******</span>
-<span><div style="display:inline; color:#0f0">Contact</div></span>
-<span>*******</span>
-<span></span>
-<span>kmanoharmurali@gmail.com</span>
-<span><a href="https://github.com/gitlost-murali">GitHub</a> <a href="">Google Scholar</a> <a href="Resume.pdf" download>Curriculum Vitae</a></span>
-<span><div style="display:inline; font-size:12px;">--more--</div></span>
-</div>
-<div class="col-sm-6">
-<span>************</span>
-<span><div style="display:inline; color:#0f0">Projects</div></span>
-<span>************</span>
-<span></span>
-<span> [<div style="display:inline; color:#0f0">1</div>] <div style="display:inline; color:#ff0096"> Unsupervised Neural Techniques in NLP </div> </span>
-<!-- <span>      <a href="https://openreview.net/pdf?id=H1g2NhC5KQ">[ICLR 2019 (Under Review)]</a></span> -->
-<span>      <a href="https://github.com/gitlost-murali">[Submitted as Thesis]</a></span>
-<span></span>
-<span> [<div style="display:inline; color:#0f0">2</div>] <div style="display:inline; color:#ff0096"> Shallow Parser in a Low-Resource Setting </div> </span>
-<!-- <span> <div style="display:inline; color:#ff0096">     Learned Neural Outlines</div> [CICLing 2019]</span> -->
-<span>      <a href="https://www.cicling.org/2019/">[CICLing 2019]</a></span>
-<span></span>
-<span> [<div style="display:inline; color:#0f0">3</div>] <div style="display:inline; color:#ff0096"> Determining Question Relevance </div></span>
-<span> <div style="display:inline; color:#ff0096">     in the context of Visual Question Answering</div></span>
-<!-- <span> <div style="display:inline; color:#ff0096">     the Manifold of Hidden Representations </div></span> -->
-<span>      <a href="https://www.acmmm.org/2019/">[Soon]</a></span></span>
-<span></span>
-<span> [<div style="display:inline; color:#0f0">4</div>] <div style="display:inline; color:#ff0096"> Visual Question Generation <a href="https://github.com/gitlost-murali/Natural-Questions-Generation-from-Images">[Code]</a></div></span>
-<!-- <span> <div style="display:inline; color:#ff0096">     Sentence Representations via Large Scale </div> </span> -->
-<!-- <span> <div style="display:inline; color:#ff0096">     Multi-task Learning </div><a href="https://arxiv.org/abs/1804.00079">[ICLR 2018]</a></span> -->
-<span></span>
-<span> [<div style="display:inline; color:#0f0">5</div>] <div style="display:inline; color:#ff0096"> Variation of Conditional GANs</div> <a href="https://github.com/gitlost-murali/Number-2-Image-using-GAN">[Code]</a></span>
-<span></span>
-<span> [<div style="display:inline; color:#0f0">6</div>] <div style="display:inline; color:#ff0096"> Animation of Knapsack algorithm <a href="https://github.com/gitlost-murali/Animation_Code_For_Fractional_Knapsack">[Code]</a></div></span>
-<!-- <span>      <a href="https://github.com/gitlost-murali/Animation_Code_For_Fractional_Knapsack">[Code]</a> </span> -->
-<span></span>
-<span> [<div style="display:inline; color:#0f0">7</div>] <div style="display:inline; color:#ff0096"> PySnap (Employee Tracker)  <a href="https://github.com/gitlost-murali/PySnap">[Code]</a></div></span>
-<!-- <span>     <div style="display:inline; color:#ff0096"> and Question Generation</div></span> -->
-<!-- <span>      <a href="https://arxiv.org/abs/1706.04560">[ACL 2018 MRQA Workshop]</a></span> -->
-<span> </span>
-<span> [<div style="display:inline; color:#0f0">8</div>] <div style="display:inline; color:#ff0096"> Virtual Hand Bot using Arduino <a href="https://www.youtube.com/watch?v=-OnxkzVm7kI">[Video]</a></div></span>
-<!-- <span>      <a href="https://arxiv.org/abs/1705.10929">[Code]</a></span> -->
-<span></span>
-<span> [<div style="display:inline; color:#0f0">9</div>] <div style="display:inline; color:#ff0096"> Website for college ATV vehicle team</div></span>
-<span>     <div style="display:inline; color:#ff0096"> to attract sponsors</div> <a href="https://github.com/gitlost-murali/Website-for-Frigators-ATV-Team">[Repo]</a> </span>
-<!-- <span>      <a href="https://github.com/gitlost-murali/Website-for-Frigators-ATV-Team">[Repo]</a></span> -->
-<span></span>
-<span> [<div style="display:inline; color:#0f0">10</div>] <div style="display:inline; color:#ff0096">Data Engineering for Indian Languages </div></span>
-<span>     <div style="display:inline; color:#ff0096"> Scripts for crawling, cleaning, parsing & </div></span>
-<span>     <div style="display:inline; color:#ff0096"> creating Sense Annotated corpus </div><a href="https://www.mind2019.in/author-info/accepted-papers">[MIND 2019]</a></span>
-<span> </span>
-<span> [<div style="display:inline; color:#0f0">11</div>] <div style="display:inline; color:#ff0096">Change Detection Challenge using AutoEncoder </div> </span>
-<span>     <div style="display:inline; color:#ff0096"> Part of Image Processing course</div> <a href="https://github.com/gitlost-murali/Digital-Image-Processing-Codes">[Code]</a></span>
-<span></span>
+    <section class="profile-section p-3 p-lg-5 d-flex" id="home">
+      <div class="w-100">
+        <h3>Hola! I'm <b>Murali</b> Manohar</h3>
+        <div class="my-5">
+          <h5 class="mb-3">About me</h5>
+          <h4>Problem Solver, Engineer..</h4>
+          <p class="lead mb-5 max-width-75">Currently, I'm a Data Scientist at <a href="https://gramener.com">Gramener Inc.</a>
+              While Data Scientist is a highly abstract term, I build DL, ML models & conduct literature survey, baseline survey and also web development. 
+              I do what I do, for <b>three</b> reasons. <i>1. Monetary reasons</i>, <i>2. Something exciting, that may not have to be useful</i> 
+              <i>3. Addressing social issues.</i> Everyone has a different approach towards a project. In my case, it is to get it running very fast, call
+              it <b><i>baseline</i></b> in research, <b><i>prototype</i></b> in industry. 
+              I suggest sometimes weirder data-driven solutions for the organizations. I enjoy finding insights and storytelling with data through beautiful visualizations.
+          </p>
+        </div>
+        <!-- <div class="more-about-me row">
+          <div class="col-md-4 mt-4">
+            <h4 class="text-primary">Expertise</h4>
+            <p class="lead">
+              I enjoy solving problems with technology and expert in building end-to-end data science applications.
+              <ul>
+                <li>Data driven applications</li>
+                <li>Machine Learning</li>
+                <li>Data Visualizations</li>
+                <li>Python for Data Science</li>
+                <li>Natural Language Processing</li>
+                <li>Unsupervised Neural Machine Translation</li>
+                <li>Web Technologies</li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-4 mt-4 px-4">
+            <h4 class="text-primary">I like to speak</h4>
+            <p class="lead">I like to speak at events, forums or conferences about data and technology.</p>
+            <p class="lead">
+              I have delivered talks and workshops at various forums, conferences and Graduate schools on Building real time data science applications, Data Visualizations, Python for Data Science, Pandas,
+               Data Science Tech stack, Optimizing Databases, Building Data pipeline, Artificial Intelligence and Storytelling with data.
+            </p>
+          </div>
+          <div class="col-md-4 mt-4 px-4">
+            <h4 class="text-primary">Life With Data</h4>
+            <p class="lead">
+              We started <a href="https://twitter.com/lwdata">LifeWithData</a> as a data visualization museum in Bangalore to explore how to use data to empower our lives better.
+            </p>
+            <p class="lead">
+              Later, We started helping non-profits in solving data science problems.
+            </p>
+          </div>
+        </div> -->
+      </div>
 
-<span>*********</span>
-<span><div style="display:inline; color:#0f0">Tutorials...</div></span>
-<span>*********</span>
-<span></span>
-<span> [<div style="display:inline; color:#0f0">a</div>]<a href='https://medium.com/@kmanoharmurali/friendly-introduction-to-gans-357cf0a99a6e' target="_blank" style="color:#ff0096"> GAN <div style="display:inline;color:#0bc;">[Blog]</div> </a></span>
-<span> [<div style="display:inline; color:#0f0">b</div>]<a href='Blogs/Tutorials/DCGAN.html' target="_blank" style="color:#ff0096" > DCGAN <div style="display:inline;color:#0bc;">[Code]</div> </a></span>
-<span> [<div style="display:inline; color:#0f0">c</div>]<a href='https://medium.com/@kmanoharmurali/mapping-word-embeddings-across-languages-word-translation-without-parallel-data-44342ecda2d4' target="_blank" style="color:#ff0096" > Cross-lingual Embeddings <div style="display:inline;color:#0bc;">[Blog]</div> </a></span>
-<span> [<div style="display:inline; color:#0f0">d</div>]<a href='Blogs/CoronaTimes/CoronaLinksForHelp.html' target="_blank" style="color:#ff0096"> CoronaApps <div style="display:inline;color:#0bc;">[Article]</div> </a></span>
-<span> [<div style="display:inline; color:#0f0">e</div>]<a href='Blogs/bgm_blog/Blog_BackgroundMusic.html' target="_blank" style="color:#ff0096"> BGM based analysis <div style="display:inline;color:#0bc;">[Blog]</div> </a><a href='Blogs/Blog_BackgroundMusic.slides.html' target="_blank" style="color:#0bc">[Slides]</a></span>
-<span></span>
-<span> <div style="display:inline; font-size:12px;">Credits to SanDeep for the design idea and @boredyannlecun for the quote.</div></span>
-<span></span>
-<span style="display:inline;" id="CounterVisitor"></span>
-</div>
-</div>
-</div>
-</pre>
-<script>
-  $(document).ready(function(){  });
-$.ajax
-  ({
-      type: "GET",
-      dataType : 'json',
-      async: false,
-      url: 'updatecount.php'
-  });
+    </section>
+    <hr class="m-0">
 
-$.getJSON('views.json', function(data) {
-      console.log(data['views']);
-      var n = data['views'];
-      // $("#CounterVisitor").html(' Visitor Count : <b>' + n.toString()+'</b>') //Avoiding this since github doesn't support dynamic PHP.
-  });
-// Reference https://stackoverflow.com/questions/47428504/javascript-count-number-of-visitor-for-website
-// $("#CounterVisitor").html(' Visitor Count : <b>' + n.toString()+'</b>')
-</script>
-</body></html>
+    <section class="profile-section p-3 p-lg-5 justify-content-center" id="mywork">
+      <div class="w-100">
+        <h3 class="mb-5">Works <em class="h6">to list a few...</em></h3>
+        <div class="project-cards row worklist"></div>
+        <script type="text/html" id="worklist">
+          <% _.each(wlist, function(row){ %>
+            <div class="col-md-4 mb-4">
+              <div class="card px-2 py-1 shadow-sm">
+                <div class="card-block" style="background: url(assets/img/<%= row.image%>); background-position: 100% 100%; background-size: auto 40px; background-repeat: no-repeat;">
+                  <h5 class="card-title"><%= row.name%></h5>
+                  <!-- <h6 class="card-subtitle text-muted">Support card subtitle</h6> -->
+                  <p class="card-text p-y-1"><%= row.description %></p>
+                  <a href="<%= row.link%>" class="card-link"><%= row.linktext%></a>
+                </div>
+              </div>
+            </div>
+          <% }) %>
+        </script>
+      </div>
+    </section>
+    <hr class="m-0">
+
+    <section class="profile-section p-3 p-lg-5 d-flex" id="about">
+      <!-- align-items-center -->
+      <div class="w-100">
+        <h3 class="mb-5">Profile</h3>
+        <div class="more-about-me row">
+          <div class="col-md-4">
+            <h4 class="text-primary">Education</h4>
+            <div class="timeline">
+              <div class="timeline-event te-primary">
+                <h4 class="event-name">Master of Science</h4>
+                <div>Linguistics/NLP</div>
+                <span class="event-description"><i>loading...</i></span>
+                <p>2020/21 - 2022/23</p>
+              </div>
+
+              <div class="timeline-event te-primary">
+                <h4 class="event-name">Bachelor of Engineering</h4>
+                <div>Computer Science</div>
+                <span class="event-description">BMU - CSE</span>
+                <p>2015-19</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-primary">Experience</h4>
+            <div class="timeline">
+              <div class="timeline-event te-primary mb-4">
+                <h4 class="event-name">Assoc. Data Scientist</h4>
+                <span class="event-description">Gramener</span>
+                <div class="event-date">June 2019 - Current</div>
+                <!-- <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p> -->
+              </div>
+
+              <div class="timeline-event te-primary mb-4">
+                <h4 class="event-name">Research Intern (Thesis)</h4>
+                <span class="event-description">IIIT-Hyderabad</span>
+                <div class="event-date">Dec 2018 - May 2019</div>
+                <!-- <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p> -->
+              </div>
+
+              <div class="timeline-event te-primary mb-4">
+                <h4 class="event-name">Summer Research Intern</h4>
+                <span class="event-description">IIIT-Hyderabad</span>
+                <div class="event-date">May 2018 - Jul 2018</div>
+                <!-- <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-primary">Skills</h4>
+            <div class="timeline">
+              <div class="block-title">
+                <h4>Software Engineering</h4>
+              </div>
+              <div class="skills-info mb-4">
+                <span>
+                  Python, JavaScript, HTML, CSS, JavaScript, jQuery, MySQL, SQLite,
+                  Docker, Git, Dev-Ops, AWS, Azure
+                </span>
+              </div>
+              <div class="block-title">
+                <h4>Data Science</h4>
+              </div>
+              <div class="skills-info mb-4">
+                <span>
+                  Machine Learning, Deep Learning, Natural Language Processing, Computer Vision,
+                </span>
+              </div>
+              <div class="block-title">
+                <h4>Tools</h4>
+              </div>
+              <div class="skills-info mb-4">
+                <span>
+                  PyTorch, Keras, VSCode, JupyterLab
+                  Trello, Notion, Ubuntu/Windows.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="m-0">
+
+    <section class="profile-section p-3 p-lg-5 d-flex" id="contact">
+      <div class="w-100">
+        <h3 class="mb-5">Contact</h3>
+        <h6>Feel free to get in touch with me. I am always open to discussing new projects, idea or technology.</h6>
+        <div class="mt-4">Location</div>
+        <a href="https://goo.gl/maps/RHKNEELkonNpKaBY7">Hyderabad, India</a>
+        <div class="mt-4">Need help?</div>
+        <a href="mailto:kmanoharmurali@gmail.com">kmanoharmurali@gmail.com</a>
+        <div class="mt-4">Feel like talking?</div>
+        <a href="tel:+91 9959440709">+91 9959440709</a>
+        <link rel="canonical" href="https://gitlost-murali.github.io/">
+        <div class="social-icons mt-2 ml-1">
+          <a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/murali-manohar/" target="_blank"></a>
+          <a class="fab fa-github" href="https://github.com/gitlost-murali" target="_blank"></a>
+          <a class="fab fa-twitter" href="https:/twitter.com/gitlostmurali" target="_blank"></a>
+          <!-- <a class="fab fa-facebook-f" href="https://www.facebook.com/murali-manohar" target="_blank"></a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="profile-section p-3 p-lg-5 d-flex align-items-center" id="blog">
+      <div class="w-100">
+        <h2 class="mb-5">Blog</h2>
+        ...
+      </div>
+    </section>
+
+    <hr class="m-0"> -->
+
+    <hr class="m-0">
+    <section class="profile-section p-3 p-lg-5 d-flex" id="thoughts">
+      <div class="w-100">
+        <h3 class="mb-5">Thoughts</h3>
+          <b>Majoritarianism & Dissent:</b>
+          <p> When I was reading the <b>book 1984</b>, I came across a concept called <b>Thought Police</b>.
+          Thought Police: Where everything (devices, people) around you starts to dissect & scrutinize your dissent for the existing rule. While the book is 
+          setup in an dystopian world, what I worry for, is the Thought Police in current times. Imagine you criticize an establishment and start worrying about 
+          the citizenship score. Or your colleagues deriding/threatening your political opinion. Think of the hate brewing in social
+          media platforms. <i>To be continued ...</i>
+          </p>
+          
+          <!-- <b>Paradox in <i>"Race to survive"</i>:</b>
+          <p>In a winners take all market, you see people limiting the knowledge. Paradoxically, we see people blogging to explain complex DL concepts.
+          This paradigm shift is clearly visible in the new graduates but not so much in the experienced people.
+          </p> -->
+
+          <!-- <b>Research & Industry</b>
+          <p> This opinion is purely based on my time (8-10 months) in Research labs & (1+ year) in Industry. <br><b>Industry</b> seemed to be banal &  fairly simple: 
+            Clone an open-source repository without any guilt, repurpose & present the solution. Hide the secret sauce with excess authorizations and VPNs, which actually 
+            is an open-secret. And also ridicule the research labs for wasting time & money. While it may seem too harsh, this is how <b>most</b>(not all) Indian IT companies' employees 
+            function, trying to impress their bosses by justifying their pay and time. That's one reason why you don't find much publications from the commercial sector except for 
+            TCS/Samsung/IBM/Adobe research. On the other hand,Research seemed to be a holistic experience where you are on your own journey and definitely a place with suspense with a lot of uncertainities.
+          </p> -->
+
+          <!-- <b>Selective apathy & Hypocrisy</b>
+          <p> I know someone who's been apathetic to migrants walking back to their homes. Here are some of his messages that startled me.
+          <i>"They're a small section of the society. Why're they walking like idiots. How dare they complain about the free food?"</i>. Was not sure if he's being logical or defending the govt.
+           He is the same gentlemen who was moved a lot by the Elephant's death. 
+          </p> -->
+
+          <b>Don't bask in the reflected glory</b>
+          <p class="mb-0"> If you didn't get it, happy <b><i>basking</i></b>
+          </p>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <!-- <section class="profile-section p-3 p-lg-5 d-flex align-items-center" id="notebook">
+      <div class="w-100">
+        <h2 class="mb-5">Notebooks</h2>
+        ...
+      </div>
+    </section> -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
