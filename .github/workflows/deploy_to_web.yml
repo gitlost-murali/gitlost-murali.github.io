@@ -1,0 +1,22 @@
+name: Deployment workflow
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  job-one:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: testing gitlostmurali.com ssh server connection
+      uses: appleboy/ssh-action@master
+      with:
+        host: gitlostmurali.com
+        username: mano
+        key: ${{secrets.WINDOWS_PRIVATE}}
+        port: 22
+        script: |
+          cd website
+          git pull origin master
+          git status
