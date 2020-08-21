@@ -13,7 +13,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: gitlostmurali.com
-        username: mano
+        username: root
         key: ${{secrets.WINDOWS_PRIVATE}}
         port: 22
         script: |
